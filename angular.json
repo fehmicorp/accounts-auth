@@ -34,7 +34,7 @@
             "ssr": {
               "entry": "src/server.ts"
             },
-            "baseHref": "/",
+            "baseHref": "/auth",
             "deployUrl": "/auth/"
           },
           "configurations": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3efa4876-110a-4188-aff4-24d0324e7ea9"
   }
 }
