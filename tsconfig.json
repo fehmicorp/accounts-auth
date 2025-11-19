@@ -25,10 +25,19 @@
   "files": [],
   "references": [
     {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
+      "extends": "./tsconfig.json",
+      "compilerOptions": {
+        "outDir": "./out-tsc/app",
+        "types": [
+          "node"
+        ]
+      },
+      "include": [
+        "src/**/*.ts"
+      ],
+      "exclude": [
+        "src/**/*.spec.ts"
+      ]
     }
   ]
 }
